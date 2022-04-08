@@ -1,13 +1,7 @@
 // import { Link } from "react-router-dom";
 
-import Layout from "../Layout/Layout";
-
 const AboutUsPage = () => {
-  return (
-    <Layout>
-      <p>This is the AboutUsPage</p>
-    </Layout>
-  );
+  return <p>This is the AboutUsPage</p>;
 };
 
 export default AboutUsPage;

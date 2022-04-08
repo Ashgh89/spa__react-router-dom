@@ -1,13 +1,7 @@
 // import { Link } from "react-router-dom";
 
-import Layout from "../Layout/Layout";
-
 const HomePage = () => {
-  return (
-    <Layout>
-      <p>This is the HomePage</p>
-    </Layout>
-  );
+  return <p>This is the HomePage</p>;
 };
 
 export default HomePage;
