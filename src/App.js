@@ -1,18 +1,17 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import HomePage from "./pages/HomePage";
-import AboutUsPage from "./pages/AboutUsPage";
-
 import Layout from "./Layout/Layout";
-import ContactUs from "./pages/ContactUs";
+import routes from "./routes";
 
 function App() {
+  // WHAT IF WE HAVE HERE 100 ROUTE? THAT's NOT GOOD
+  // LET'S FIX IT BY CREATING A ROUTES.JS FILE
   return (
     <Layout>
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about-us" element={<AboutUsPage />} />
-        <Route path="/contact" element={<ContactUs />} />
+        {routes.map((route) => (
+          <Route key={route.id} {...route} />
+        ))}
       </Routes>
     </Layout>
   );

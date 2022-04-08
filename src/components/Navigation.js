@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const Navigation = () => {
   const items = [
-    { name: "home", to: "/", exact: true },
+    { name: "home", to: "/", exact: "true" },
     { name: "About Us", to: "/about-us" },
     { name: "Contact", to: "/contact" },
   ];
