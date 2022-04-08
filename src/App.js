@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
@@ -10,3 +9,6 @@ function App() {
 }
 
 export default App;
+// for SPA we need to install react router dom
+// so react needs it for SPA
+// 1. npm install react-router-dom
