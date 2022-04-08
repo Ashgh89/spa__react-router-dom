@@ -1,11 +1,12 @@
 // import { Link } from "react-router-dom";
 
+import Layout from "../Layout/Layout";
+
 const AboutUsPage = () => {
   return (
-    <>
+    <Layout>
       <p>This is the AboutUsPage</p>
-      {/* <Link to="/">Go to Home page</Link> */}
-    </>
+    </Layout>
   );
 };
 
