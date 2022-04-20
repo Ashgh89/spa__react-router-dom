@@ -23,6 +23,9 @@ ul li {
 
 footer {
   background-color: rgb(133, 95, 45);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .container a:hover,
