@@ -5,6 +5,7 @@ const Navigation = () => {
     { name: "home", to: "/" },
     { name: "About Us", to: "/about-us" },
     { name: "Contact", to: "/contact" },
+    { name: "blogs", to: "/blogs" },
   ];
   return (
     <nav className="container">
