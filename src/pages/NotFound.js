@@ -1,7 +1,14 @@
+import { Link } from "react-router-dom";
+
 const NotFound = () => {
   return (
     <>
-      <p>This is the NotFound</p>
+      <p>
+        404
+        <br />
+        This is the NotFound
+      </p>
+      <Link to="/">Go to home page</Link>
     </>
   );
 };

@@ -16,6 +16,8 @@ function App() {
     </Layout>
   );
 }
+// The <Switch /> component will only render the first route that matches/includes the path.
+// we dont need <Switch></Switch> in react 18 and it is replaced with <Routes></Routes>.
 
 export default App;
 // for SPA we need to install react router dom
