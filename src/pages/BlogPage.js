@@ -13,7 +13,9 @@ const BlogPage = () => {
       {items.map((item) => {
         return (
           <li key={item.to}>
-            <Link to={item.to}>{item.name}</Link>
+            <Link to={{ pathname: item.to, search: "sort=name" }}>
+              {item.name}
+            </Link>
           </li>
         );
       })}
@@ -21,3 +23,4 @@ const BlogPage = () => {
   );
 };
 export default BlogPage;
+// {{ pathname: item.to, search: "name" }} this "name" is query string and you can name it whatever u want
