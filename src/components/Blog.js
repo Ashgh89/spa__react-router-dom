@@ -1,13 +1,17 @@
 import { Link, useParams, useLocation } from "react-router-dom";
+import queryString from "query-string";
 
-function useQuery() {
-  return new URLSearchParams(useLocation().search);
-}
-
+// function useQuery() {
+//   return new URLSearchParams(useLocation().search);
+// }
+//NOTICE DON't forget to -> npm i query-string
 const Blog = () => {
   // const id=props.match.params.id -> in new version of react we can't do it anymore and we use (useParams)
-  let query = useQuery();
-  console.log(query.get("sort"));
+  // let query = useQuery();
+  // console.log(query.get("sort"));
+  const location = useLocation();
+  const query = queryString.parse(location.search);
+  console.log(query);
   const { id } = useParams(); // http req=> axios.get("/blog/1")
   // So useParams is for making api request.
   // Here after blogs/(whatever we type here) is gonna be our id

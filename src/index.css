@@ -8,7 +8,6 @@
   text-decoration: none;
   color: black;
 }
-
 ul {
   background-color: rgb(16, 115, 82);
   display: flex;
@@ -37,4 +36,17 @@ footer {
 
 .container a.active {
   border-bottom: 4px solid rgb(190, 104, 5);
+}
+
+.nested ul {
+  background-color: rgb(46, 171, 66);
+}
+.nested a {
+  text-decoration: none;
+  color: blanchedalmond;
+}
+
+.nested a.active {
+  color: aliceblue;
+  border-bottom: 3px solid yellow;
 }
